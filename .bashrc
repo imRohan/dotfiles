@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+export BASH_CONF="bashrc"
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -97,7 +99,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
+# some more aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -105,6 +107,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias gitlog="git log --graph --decorate -p"
+alias http-server="python -m SimpleHTTPServer 3000"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -130,5 +133,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 rvm use 2.2.0
