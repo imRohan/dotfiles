@@ -108,6 +108,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias gitlog="git log --graph --decorate -p"
 alias http-server="python -m SimpleHTTPServer 3000"
+alias youtube-dl="/usr/local/bin/youtube-dl"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -134,6 +135,9 @@ if ! shopt -oq posix; then
 fi
 
 #rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-rvm use 2.2.0
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+#go
+export GOPATH=$HOME/go
