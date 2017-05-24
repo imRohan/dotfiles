@@ -109,6 +109,8 @@ alias ....="cd ../../.."
 alias gitlog="git log --graph --decorate -p"
 alias http-server="python -m SimpleHTTPServer 3000"
 alias youtube-dl="/usr/local/bin/youtube-dl"
+alias gitshortlog="git shortlog -sn"
+alias gitteamlog="git log --all --oneline --no-merges"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
