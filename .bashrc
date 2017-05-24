@@ -143,3 +143,6 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 #go
 export GOPATH=$HOME/go
+
+#yarn
+export PATH="$HOME/.yarn/bin:$PATH"
