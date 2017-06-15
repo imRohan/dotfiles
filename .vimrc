@@ -5,6 +5,7 @@ filetype off                  " required
 set encoding=utf-8
 set laststatus=2              " requried for airline
 set conceallevel=0
+set noswapfile
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -23,12 +24,6 @@ Plugin 'https://github.com/Yggdroot/indentLine'
 Plugin 'https://github.com/jiangmiao/auto-pairs'
 
 
-" set theme
-let g:solarized_termtrans = 1
-set term=xterm-256color
-set background=light
-colorscheme solarized
-
 " 80 char line
 set textwidth=80
 set colorcolumn=+1
@@ -45,7 +40,7 @@ let g:indentLine_enabled = 1
 " tab settings
 set tabstop=2
 set shiftwidth=2
-set shiftround
+set softtabstop=2
 set expandtab
 
 " Window Movement
