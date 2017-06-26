@@ -38,9 +38,9 @@ set number
 let g:indentLine_enabled = 1
 
 " tab settings
+filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
-set softtabstop=2
 set expandtab
 
 " Window Movement
@@ -61,7 +61,4 @@ noremap <C-a> :CtrlP ~<CR>
 call vundle#end()            " required
 " enable syntax
 syntax enable
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
 
