@@ -58,14 +58,6 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-
-
-
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -111,7 +103,10 @@ alias http-server="python -m SimpleHTTPServer 3000"
 alias youtube-dl="/usr/local/bin/youtube-dl"
 alias gitshortlog="git shortlog -sn"
 alias gitteamlog="git log --all --oneline --no-merges"
-
+alias youtube-dl-mp3="youtube-dl --extract-audio --audio-format mp3 -o
+"%(title)s.%(ext)s"
+https://www.youtube.com/playlist?list=PLLYP9o05DWmgYnamShP4U3LJtyc7OlH7p
+"
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -146,3 +141,6 @@ export GOPATH=$HOME/go
 
 #yarn
 export PATH="$HOME/.yarn/bin:$PATH"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
