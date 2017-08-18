@@ -39,9 +39,12 @@ let g:indentLine_enabled = 1
 
 " tab settings
 filetype plugin indent on
+set ff=unix
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 set expandtab
+retab
 
 " Window Movement
 nnoremap <C-j> <C-w>j
