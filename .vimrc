@@ -17,6 +17,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'https://github.com/bling/vim-airline'
+Plugin 'https://github.com/vim-airline/vim-airline-themes'
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim'
 Plugin 'https://github.com/tpope/vim-fugitive'
 Plugin 'https://github.com/kchmck/vim-coffee-script'
@@ -32,14 +33,15 @@ let g:enable_bold_font = 1
 set guifont=Inconsolata\ for\ Powerline:h15
 
 " Theme Settings
-colorscheme wombat
+set t_Co=256
+colorscheme Tomorrow-Night-Eighties
 let g:airline_powerline_fonts = 1
+let g:airline_theme = "angr"
 
 " 80 char line
 set textwidth=80
 set colorcolumn=+1
 highlight ColorColumn ctermbg=0 guibg=lightgrey
-
 
 " enable line numbers
 set number
