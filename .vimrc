@@ -22,16 +22,24 @@ Plugin 'https://github.com/tpope/vim-fugitive'
 Plugin 'https://github.com/kchmck/vim-coffee-script'
 Plugin 'https://github.com/Yggdroot/indentLine'
 Plugin 'https://github.com/jiangmiao/auto-pairs'
+Plugin 'https://github.com/flazz/vim-colorschemes'
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+" set font
+let g:enable_bold_font = 1
+set guifont=Inconsolata\ for\ Powerline:h15
+
+" Theme Settings
+colorscheme wombat
+let g:airline_powerline_fonts = 1
 
 " 80 char line
 set textwidth=80
 set colorcolumn=+1
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-" set font
-set guifont=Inconsolata\ for\ Powerline:h15
-let g:airline_powerline_fonts = 1
 
 " enable line numbers
 set number
@@ -60,8 +68,5 @@ autocmd VimEnter * wincmd p
 " alias commands 
 noremap <C-a> :CtrlP ~<CR>
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 " enable syntax
 syntax enable
-
