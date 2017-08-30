@@ -15,12 +15,12 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'https://github.com/bling/vim-airline'
 Plugin 'https://github.com/vim-airline/vim-airline-themes'
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim'
 Plugin 'https://github.com/tpope/vim-fugitive'
 Plugin 'https://github.com/kchmck/vim-coffee-script'
+Plugin 'https://github.com/jelera/vim-javascript-syntax'
 Plugin 'https://github.com/Yggdroot/indentLine'
 Plugin 'https://github.com/jiangmiao/auto-pairs'
 Plugin 'https://github.com/flazz/vim-colorschemes'
