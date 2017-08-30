@@ -47,6 +47,10 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 set number
 let g:indentLine_enabled = 1
 
+" show whitespace
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set list
+
 " tab settings
 filetype plugin indent on
 set ff=unix
