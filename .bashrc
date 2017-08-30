@@ -117,9 +117,3 @@ export PATH="$HOME/.yarn/bin:$PATH"
 # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH="$PATH:$HOME/.rvm/bin"
-
-# Start Tmux!
-
-if command -v tmux>/dev/null; then
-	[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
