@@ -103,11 +103,6 @@ alias gitshortlog="git shortlog -sn"
 alias gitteamlog="git log --all --oneline --no-merges"
 alias vtop="vtop --theme wizard"
 
-# rvm
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-
 # go
 export GOPATH=$HOME/go
 
@@ -117,3 +112,6 @@ export PATH="$HOME/.yarn/bin:$PATH"
 # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# AWS Cli
+export PATH=~/.local/bin:$PATH
