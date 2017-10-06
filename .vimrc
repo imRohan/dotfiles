@@ -24,6 +24,7 @@ Plugin 'https://github.com/jelera/vim-javascript-syntax'
 Plugin 'https://github.com/Yggdroot/indentLine'
 Plugin 'https://github.com/jiangmiao/auto-pairs'
 Plugin 'https://github.com/flazz/vim-colorschemes'
+Plugin 'https://github.com/tpope/vim-ragtag'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
