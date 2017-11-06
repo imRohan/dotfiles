@@ -24,7 +24,6 @@ Plugin 'https://github.com/jiangmiao/auto-pairs'
 Plugin 'https://github.com/flazz/vim-colorschemes'
 Plugin 'https://github.com/alvan/vim-closetag'
 Plugin 'https://github.com/sheerun/vim-polyglot'
-Plugin 'https://github.com/bcicen/vim-jfmt'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
