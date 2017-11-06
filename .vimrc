@@ -19,12 +19,12 @@ Plugin 'https://github.com/bling/vim-airline'
 Plugin 'https://github.com/vim-airline/vim-airline-themes'
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim'
 Plugin 'https://github.com/tpope/vim-fugitive'
-Plugin 'https://github.com/kchmck/vim-coffee-script'
-Plugin 'https://github.com/jelera/vim-javascript-syntax'
 Plugin 'https://github.com/Yggdroot/indentLine'
 Plugin 'https://github.com/jiangmiao/auto-pairs'
 Plugin 'https://github.com/flazz/vim-colorschemes'
 Plugin 'https://github.com/alvan/vim-closetag'
+Plugin 'https://github.com/sheerun/vim-polyglot'
+Plugin 'https://github.com/bcicen/vim-jfmt'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
