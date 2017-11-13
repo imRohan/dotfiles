@@ -45,7 +45,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -58,7 +58,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-
+# primary prompt layout
 PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \w\[\033[0;32m\] -[$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\033[0;32m\]]\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\]\[\033[0m\] '
   
 unset color_prompt force_color_prompt
@@ -87,6 +87,7 @@ alias youtube-dl="/usr/local/bin/youtube-dl"
 alias gitshortlog="git shortlog -sn"
 alias gitteamlog="git log --all --oneline --no-merges"
 alias vtop="vtop --theme wizard"
+alias weather="curl wttr.in/Toronto"
 
 # go
 export GOPATH=$HOME/go
