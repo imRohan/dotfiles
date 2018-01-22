@@ -24,6 +24,8 @@ Plugin 'https://github.com/jiangmiao/auto-pairs'
 Plugin 'https://github.com/flazz/vim-colorschemes'
 Plugin 'https://github.com/alvan/vim-closetag'
 Plugin 'https://github.com/sheerun/vim-polyglot'
+Plugin 'https://github.com/godlygeek/tabular'
+Plugin 'https://github.com/rking/ag.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,11 +61,14 @@ set softtabstop=2
 set expandtab
 retab
 
+" Silver Searcher setting
+let g:ag_working_path_mode="r"
+
 " Window Movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-L>
+nnoremap <C-L> <C-W><C-H>
 
 " run the following when VIM opens
 " autocmd VimEnter * NERDTree
