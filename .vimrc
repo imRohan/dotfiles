@@ -26,6 +26,7 @@ Plugin 'https://github.com/alvan/vim-closetag'
 Plugin 'https://github.com/sheerun/vim-polyglot'
 Plugin 'https://github.com/godlygeek/tabular'
 Plugin 'https://github.com/rking/ag.vim'
+Plugin 'https://github.com/gko/vim-coloresque'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
