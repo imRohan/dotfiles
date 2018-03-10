@@ -68,8 +68,8 @@ let g:ag_working_path_mode="r"
 " Window Movement
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
-nnoremap <C-H> <C-W><C-L>
-nnoremap <C-L> <C-W><C-H>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
 
 " run the following when VIM opens
 " autocmd VimEnter * NERDTree
