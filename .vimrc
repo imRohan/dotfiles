@@ -68,8 +68,8 @@ let g:ag_working_path_mode="r"
 " Window Movement
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
-nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " run the following when VIM opens
 " autocmd VimEnter * NERDTree
@@ -78,6 +78,10 @@ autocmd VimEnter * wincmd p
 
 " alias commands 
 noremap <C-a> :CtrlP ~<CR>
+
+" open splits in vertical/horizontal depending on screen size
+noremap <C-W>v :vsp <CR>
+noremap <C-W>h :sp <CR>
 
 " enable syntax
 syntax enable
