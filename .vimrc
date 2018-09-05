@@ -27,6 +27,8 @@ Plugin 'https://github.com/godlygeek/tabular'
 Plugin 'https://github.com/gko/vim-coloresque'
 Plugin 'https://github.com/luochen1990/rainbow'
 Plugin 'https://github.com/terryma/vim-smooth-scroll'
+Plugin 'https://github.com/airblade/vim-gitgutter'
+Plugin 'https://github.com/junegunn/goyo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -84,6 +86,9 @@ noremap <C-a> :CtrlP ~<CR>
 " open splits in vertical/horizontal depending on screen size
 noremap <C-W>v :vsp <CR>
 noremap <C-W>h :sp <CR>
+
+" custom commands
+command Focus execute "Goyo"
 
 " enable syntax
 syntax enable
