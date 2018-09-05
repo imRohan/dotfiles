@@ -18,15 +18,15 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/bling/vim-airline'
 Plugin 'https://github.com/vim-airline/vim-airline-themes'
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim'
-Plugin 'https://github.com/tpope/vim-fugitive'
 Plugin 'https://github.com/Yggdroot/indentLine'
 Plugin 'https://github.com/jiangmiao/auto-pairs'
 Plugin 'https://github.com/flazz/vim-colorschemes'
 Plugin 'https://github.com/alvan/vim-closetag'
 Plugin 'https://github.com/sheerun/vim-polyglot'
 Plugin 'https://github.com/godlygeek/tabular'
-Plugin 'https://github.com/rking/ag.vim'
 Plugin 'https://github.com/gko/vim-coloresque'
+Plugin 'https://github.com/luochen1990/rainbow'
+Plugin 'https://github.com/terryma/vim-smooth-scroll'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,6 +50,9 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 set number
 let g:indentLine_enabled = 1
 
+" enable rainbow 
+let g:rainbow_active = 1
+
 " show whitespace
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 
@@ -71,10 +74,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" run the following when VIM opens
-" autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Smooth Scroll Movement
+noremap <silent> <c-i> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+noremap <silent> <c-u> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 
 " alias commands 
 noremap <C-a> :CtrlP ~<CR>
