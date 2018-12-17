@@ -88,6 +88,7 @@ alias gitshortlog="git shortlog -sn"
 alias gitteamlog="git log --all --oneline --no-merges"
 alias vtop="vtop --theme wizard"
 alias weather="curl wttr.in/Toronto"
+alias myip="hostname -I"
 
 # go
 export GOPATH=$HOME/go
