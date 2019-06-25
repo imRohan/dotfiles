@@ -81,7 +81,7 @@ noremap <silent> <c-i> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-u> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 
 " alias commands 
-noremap <C-a> :CtrlP ~<CR>
+noremap <C-a> :CtrlPClearCache<CR>
 
 " open splits in vertical/horizontal depending on screen size
 noremap <C-W>v :vsp <CR>
