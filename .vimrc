@@ -1,4 +1,26 @@
 "Rohan Likhite
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/bling/vim-airline'
+Plug 'https://github.com/vim-airline/vim-airline-themes'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim'
+Plug 'https://github.com/Yggdroot/indentLine'
+Plug 'https://github.com/jiangmiao/auto-pairs'
+Plug 'https://github.com/flazz/vim-colorschemes'
+Plug 'https://github.com/alvan/vim-closetag'
+Plug 'https://github.com/godlygeek/tabular'
+Plug 'https://github.com/terryma/vim-smooth-scroll'
+Plug 'https://github.com/airblade/vim-gitgutter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'https://github.com/leafgarland/typescript-vim'
+call plug#end()
+
 set nocompatible              " be iMproved, required
 syntax on
 filetype off                  " required
@@ -6,32 +28,6 @@ set encoding=utf-8
 set laststatus=2              " requried for airline
 set conceallevel=0
 set noswapfile
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'https://github.com/bling/vim-airline'
-Plugin 'https://github.com/vim-airline/vim-airline-themes'
-Plugin 'https://github.com/ctrlpvim/ctrlp.vim'
-Plugin 'https://github.com/Yggdroot/indentLine'
-Plugin 'https://github.com/jiangmiao/auto-pairs'
-Plugin 'https://github.com/flazz/vim-colorschemes'
-Plugin 'https://github.com/alvan/vim-closetag'
-Plugin 'https://github.com/sheerun/vim-polyglot'
-Plugin 'https://github.com/godlygeek/tabular'
-Plugin 'https://github.com/gko/vim-coloresque'
-Plugin 'https://github.com/luochen1990/rainbow'
-Plugin 'https://github.com/terryma/vim-smooth-scroll'
-Plugin 'https://github.com/airblade/vim-gitgutter'
-Plugin 'https://github.com/junegunn/goyo.vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 
 " set font
 let g:enable_bold_font = 1
@@ -86,9 +82,6 @@ noremap <C-a> :CtrlPClearCache<CR>
 " open splits in vertical/horizontal depending on screen size
 noremap <C-W>v :vsp <CR>
 noremap <C-W>h :sp <CR>
-
-" custom commands
-command Focus execute "Goyo"
 
 " enable syntax
 syntax enable
