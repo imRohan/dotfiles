@@ -10,8 +10,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim'
-Plug 'https://github.com/Yggdroot/indentLine'
-Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/flazz/vim-colorschemes'
 Plug 'https://github.com/alvan/vim-closetag'
 Plug 'https://github.com/godlygeek/tabular'
@@ -19,6 +17,9 @@ Plug 'https://github.com/terryma/vim-smooth-scroll'
 Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/leafgarland/typescript-vim'
+Plug 'https://github.com/rking/ag.vim'
+Plug 'dense-analysis/ale'
+Plug 'tpope/vim-rails'
 call plug#end()
 
 set nocompatible              " be iMproved, required
@@ -28,6 +29,7 @@ set encoding=utf-8
 set laststatus=2              " requried for airline
 set conceallevel=0
 set noswapfile
+set backspace=indent,eol,start
 
 " set font
 let g:enable_bold_font = 1
@@ -46,16 +48,11 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " enable line numbers
 set number
-let g:indentLine_enabled = 1
-
-" enable rainbow 
-let g:rainbow_active = 1
 
 " show whitespace
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 
 " tab settings
-filetype plugin indent on
 set ff=unix
 set tabstop=2
 set shiftwidth=2
@@ -82,6 +79,3 @@ noremap <C-a> :CtrlPClearCache<CR>
 " open splits in vertical/horizontal depending on screen size
 noremap <C-W>v :vsp <CR>
 noremap <C-W>h :sp <CR>
-
-" enable syntax
-syntax enable
