@@ -20,6 +20,8 @@ Plug 'https://github.com/leafgarland/typescript-vim'
 Plug 'https://github.com/rking/ag.vim'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-rails'
+Plug 'vim-test/vim-test'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 set nocompatible              " be iMproved, required
@@ -74,8 +76,12 @@ noremap <silent> <c-i> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-u> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 
 " alias commands 
-noremap <C-a> :CtrlPClearCache<CR>
+map <C-R> :CtrlPClearCache<CR>
 
 " open splits in vertical/horizontal depending on screen size
 noremap <C-W>v :vsp <CR>
 noremap <C-W>h :sp <CR>
+
+" RSpec.vim mappings
+noremap <C-T>f :TestFile<CR>
+noremap <C-T>l :TestLast<CR>
