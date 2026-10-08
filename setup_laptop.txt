@@ -8,7 +8,8 @@ brew install tig
 # claude code
 curl -fsSL https://claude.ai/install.sh | bash
 
-
+# tmux, tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # setup zsh
 chsh -s $(which zsh)
